@@ -21,14 +21,14 @@ else if (age >= 12 && age <= 19)
     }
 else if (age > 19)
     {
-        Console.WriteLine(name + " is a a ult");
+    Console.WriteLine(name + " is a a adult");
     }
 
 // Task 3
 
 Console.WriteLine("Enter an integer");
 
-int number = Convert.ToInt32(Console.ReadLine());
+int number = Convert.ToInt32(Console.ReadLine()); // User inputs number.
 
 if (number < 0)
 {
@@ -41,4 +41,37 @@ else if (number == 0)
 else
 {
     Console.WriteLine("{0} is a postive number", number);
+}
+
+// Task 4
+
+Console.WriteLine("Enter a year");
+int year  = Convert.ToInt32(Console.ReadLine()); // User inputs year.
+
+while (year < 0) 
+{
+    Console.WriteLine("You entered a negitive number");
+    Console.WriteLine("Enter a valid number");
+    year = Convert.ToInt32(Console.ReadLine());
+}
+if (year % 4 == 0)
+{
+    Console.WriteLine(year + " is a leap year");
+}
+else
+{
+    Console.WriteLine(year + " is not a leap year");
+}
+
+// Task 5
+
+int input = Convert.ToInt32(Console.ReadLine());
+
+if (input % 2 == 0)
+{
+    Console.WriteLine(input + " is an even number");
+}
+else
+{
+    Console.WriteLine(input + " is an odd number");
 }
