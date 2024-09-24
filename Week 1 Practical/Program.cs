@@ -64,6 +64,7 @@ else
 }
 
 // Task 5
+Console.WriteLine("Enter a number");
 
 int input = Convert.ToInt32(Console.ReadLine());
 
